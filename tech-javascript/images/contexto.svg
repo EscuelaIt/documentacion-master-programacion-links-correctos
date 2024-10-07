@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="285px" preserveAspectRatio="none" style="width:275px;height:285px;background:#000000;" version="1.1" viewBox="0 0 275 285" width="275px" zoomAndPan="magnify"><defs/><g><polygon fill="#222222" points="46,2,46,2.2102,55.7222,1.5857,65.4444,2.1933,75.1667,2.3997,84.8889,1.2866,94.6111,1.9223,104.3333,1.5735,114.0556,1.6165,123.7778,1.9318,133.5,1.3086,143.2222,2.5536,152.9444,1.3697,162.6667,1.8022,172.3889,2.4319,182.1111,1.9142,191.8333,2.0682,201.5556,1.9681,211.2778,2.1785,221,2,221.2391,2,221.5857,12.7469,221.6711,23.4938,221.6793,34.2406,221.2546,44.9875,221,55.7344,221,56.198,211.2778,56.4366,201.5556,55.0132,191.8333,56.4129,182.1111,55.4379,172.3889,56.2682,162.6667,55.2394,152.9444,55.6659,143.2222,56.476,133.5,55.6856,123.7778,55.8397,114.0556,56.073,104.3333,56.1506,94.6111,55.7305,84.8889,56.0216,75.1667,55.162,65.4444,56.0188,55.7222,56.2826,46,55.7344,46.4445,55.7344,46.613,44.9875,45.5169,34.2406,45.3478,23.4938,45.3786,12.7469,46,2" style="stroke: #222222; stroke-width: 1.5;"/><text fill="#FFA500" font-family="sans-serif" font-size="30" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="153" x="57" y="41.1426">JavaScript</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="140" x="5" y="78.2676">Dot Executable: null</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="173" x="5" y="95.877">No dot executable found</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="258" x="5" y="113.4863">Cannot find Graphviz. You should try</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="9" y="131.0957"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="71" x="5" y="148.7051">@startuml</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="50" x="5" y="166.3145">testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="66" x="5" y="183.9238">@enduml</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="9" y="201.5332"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="15" x="9" y="219.1426">or</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="9" y="236.752"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="201" x="5" y="254.3613">java -jar plantuml.jar -testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="9" y="271.9707"/><!--
+@startuml
+skinparam ActivityBarColor #white
+skinparam titleBorderColor #222222
+skinparam titleBackgroundColor #222222
+skinparam titlefontColor #orange
+skinparam titleFontStyle bold
+skinparam titleFontSize 30
+
+skinparam handwritten true
+skinparam shadowing false
+skinparam backgroundColor #222222
+skinparam padding 3
+skinparam StateStartColor #white
+skinparam StateEndColor #white
+
+skinparam note {
+    backgroundColor #222222
+    borderColor #white
+    FontColor #white
+    fontSize 20
+}
+
+skinparam class {
+    fontColor #white
+    fontColor<<¿Dónde?>> #cyan
+    fontColor<<¿Cuándo?>> #cyan
+    fontColor<<¿Por qué?>> #red
+    fontColor<<¿Quién?>> #green
+    fontColor<<¿Qué?>> #orange
+    fontColor<<¿Para qué?>> #green
+    StereotypeFontColor #white
+    fontStyle bold
+    arrowColor #white
+    backgroundColor #222222
+    borderColor #white
+    circleCharacterFontName #white
+    fontSize 20
+}
+
+hide circle
+hide members
+
+title JavaScript
+
+class donde as "Netscape" <<¿Dónde?>>
+note left
+<color:cyan>Empresa pionera en Web</color>
+<color:cyan> Primer navegador de éxito: Navigator</color>
+end note
+
+class cuando as "1995" <<¿Cuándo?>>
+note right
+<color:cyan>en 10-11 días 4 años tras la creación de WWW</color>
+end note
+
+class por as "Ineficacia" <<¿Por qué?>>
+note left
+<color:red>HTML y CSS no ofrecen un conjunto suficiente de mecanismos</color>
+<color:red>para dotar de la <b>usabilidad</b> deseada para la interfaz web de usuario</color>
+<color:red>en el desarrollo de aplicaciones web</color>
+<color:red>estática: sin posiblidad de menúes, dialogos, ...</color>
+end note
+
+class quien as "Brendan Eich" <<¿Quién?>>
+note right
+<color:green>Cofundador de Fundación Mozilla</color>
+<color:green>CEO en Brave Software</color>
+end note
+
+class que as "JavaScript" <<¿Qué?>>
+note left
+<color:green>Primero llamado Mocha, luego LiveScript</color>
+<color:green> Lenguaje interpretado, imperativo, dinámico,</color>
+<color:green> orientado a funciones y objetos por prototipos, </color>
+<color:green> "parasitario" del BOM/DOM con eventos y excepciones</color>
+end note
+
+class para as "Eficacia" <<¿Para qué?>>
+note right
+<color:green>mejorar el rendimiento de las aplicaciones web</color>
+<color:green>al descargar parte del proceso en el cliente</color>
+<color:green>realizando validaciones de la información contenida en formularios</color>
+<color:green>introducir dinamismo en las páginas HTML ante eventos de usuario o del navegador</color>
+<color:green>generar dinámicamente páginas html: mover, ocultar y mostrar elementos del DOM</color>
+<color:green>modificar estilos en tiempo de ejecución</color>
+<color:green>mantenimiento del estado de las aplicaciones: cookies, token de seguridad, ...</color>
+<color:green>interaccionar con objetos Active-X, Java,... del BOM</color>
+end note
+
+class como as "Descripción" <<¿Cómo?>>
+
+por -up-> cuando
+por -up-> donde
+
+quien -up-> cuando
+quien -up-> donde
+quien -up-> por
+
+que -up-> quien
+
+para -up-> que
+
+como -up-> que
+como -up-> para
+
+@enduml
+
+PlantUML version 1.2019.05(Sat Apr 20 18:45:36 CEST 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 11.0.14+8-LTS-263
+Operating System: Windows 11
+OS Version: 10.0
+Default Encoding: windows-1252
+Language: es
+Country: ES
+--></g></svg>
